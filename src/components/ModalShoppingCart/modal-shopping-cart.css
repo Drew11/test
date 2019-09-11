@@ -2,7 +2,6 @@
     position: fixed;
     margin-top: 10px;
     left: calc(50% - 300px);
-    width: 600px;
     background-color: #61dafb;
     overflow: auto;
     border-radius: 5px;
@@ -35,4 +34,10 @@
 .remove-item:hover{
     cursor: pointer;
     background-color: #61dafb;
+}
+
+@media screen and(max-width: 375px){
+    .modal-shopping-cart {
+        width: 100%;
+    }
 }
