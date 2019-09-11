@@ -40,6 +40,22 @@ class App extends Component {
       })
   };
 
+  removeProduct =(name)=>{
+      const {addedProducts} = this.state;
+      const copy = {...addedProducts};
+
+      copy[name]--;
+
+      if(copy[name]===0){
+          delete copy[name]
+      }
+
+      this.setState({
+          ...this.state,
+          addedProducts: copy
+      })
+
+  };
   componentDidMount(){
      this.setState({
           ...this.state,
@@ -60,6 +76,7 @@ class App extends Component {
              scooters={this.state.scooters}
              addedProducts={this.state.addedProducts}
              isActiveModal={this.state.isActiveModal}
+             removeProduct={this.removeProduct}
              addProduct={this.addProduct}
           />
 

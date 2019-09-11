@@ -8,7 +8,8 @@ const Main  = (props) => {
         scooters,
         isActiveModal,
         addedProducts,
-        addProduct
+        addProduct,
+        removeProduct
     } = props;
 
         return (
@@ -18,6 +19,7 @@ const Main  = (props) => {
                         <ModalShoppingCart
                             addedProducts={addedProducts}
                             scooters={scooters}
+                            removeProduct={removeProduct}
                         />
                         :
                         null}

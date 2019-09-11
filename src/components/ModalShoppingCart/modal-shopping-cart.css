@@ -13,10 +13,26 @@
      padding: 0;
      flex-wrap: wrap;
      margin: 10px;
-
 }
 
 .modal-items li {
+    height: 30px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
     margin-top: 5px;
     background-color: green;
+}
+
+.remove-item {
+    border: none;
+    border-radius: 3px;
+    background-color: lightskyblue;
+    outline: none;
+}
+
+.remove-item:hover{
+    cursor: pointer;
+    background-color: #61dafb;
 }
