@@ -27,7 +27,7 @@ const Main  = (props) => {
                             <div key={index}
                                 className={"scooter"}
                             >
-                                <img src={scooter.image} alt=""/>
+                                <img src={`./${scooter.image}`} alt=""/>
                                 <div className={"scooter-right-section"}
                                 >
                                     <span>{scooter.name}</span>
