@@ -9,7 +9,7 @@ const  Header  = (props) => {
       <div className="Header-container">
 
         <span className="Header-title">E-scooter Emporium</span>
-        <img src="/assets/logo.png" className="Header-logo" alt="logo" />
+        <img src="./assets/logo.png" className="Header-logo" alt="logo" />
 
 
         <div className={"shopping-cart-container"}>
