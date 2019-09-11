@@ -40,9 +40,23 @@
     cursor: pointer;
     background-color: lightskyblue;
 }
-@media screen and (max-width: 842px) {
+@media screen and (max-width: 822px) {
     .App-main {
         display: flex;
         flex-direction: column;
     }
+}
+
+
+@media screen and (max-width: 376px){
+
+    .scooter {
+        width: 300px;
+    }
+
+    .scooter img {
+        width: 200px;
+        height: 200px;
+    }
+
 }
