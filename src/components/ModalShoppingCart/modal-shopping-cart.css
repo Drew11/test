@@ -1,0 +1,22 @@
+.modal-shopping-cart {
+    position: fixed;
+    margin-top: 10px;
+    left: calc(50% - 300px);
+    width: 600px;
+    background-color: #61dafb;
+    overflow: auto;
+    border-radius: 5px;
+}
+
+.modal-items {
+     list-style: none;
+     padding: 0;
+     flex-wrap: wrap;
+     margin: 10px;
+
+}
+
+.modal-items li {
+    margin-top: 5px;
+    background-color: green;
+}

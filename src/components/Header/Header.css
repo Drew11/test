@@ -1,0 +1,23 @@
+.Header-container {
+  padding: 20px;
+  display: flex;
+  background-color: #61dafb;
+  font-weight: 600;
+  align-items: center;
+}
+
+.Header-title {
+  font-size: 20px;
+}
+
+.Header-logo {
+  display: block;
+  height: 40px;
+  margin: 0 20px;
+}
+
+.shopping-cart-container {
+  display: flex;
+  width: 80%;
+  justify-content: flex-end;
+}

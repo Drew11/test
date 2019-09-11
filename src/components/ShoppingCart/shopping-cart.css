@@ -1,0 +1,8 @@
+.shopping-cart {
+    display: flex;
+    align-items: center;
+}
+
+.material-icons:hover {
+    cursor: pointer;
+}
