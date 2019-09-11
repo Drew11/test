@@ -1,7 +1,8 @@
 .modal-shopping-cart {
     position: fixed;
+    width: 500px;
     margin-top: 10px;
-    left: calc(50% - 300px);
+    left: calc(50% - 250px);
     background-color: #61dafb;
     overflow: auto;
     border-radius: 5px;
@@ -36,9 +37,11 @@
     background-color: #61dafb;
 }
 
-@media screen and(max-width: 375px){
+@media screen and (max-width: 375px) {
     .modal-shopping-cart {
+        margin-top: 0;
+        margin-left: 8px;
         width: 100%;
-        left: 0;
+        border-radius: 0;
     }
 }
