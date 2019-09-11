@@ -3,20 +3,22 @@ import './modal-shopping-cart.css';
 
 const ModalShoppingCart = (props)=>{
 
-    const {addedProducts} = props;
-    const scooters =  Object.keys(addedProducts);
+    const {addedProducts, scooters} = props;
+    const scootersName =  Object.keys(addedProducts);
+
 
     return (
         <div className={"modal-shopping-cart"}>
             <ul className={"modal-items"}>
 
-                {scooters.length===0?
+                {scootersName.length===0?
                     <li>Sorry, products not added yet... </li>:null
                 }
 
-                {scooters.map((scooter, index)=>
+                {scootersName.map((name, index)=>
                     <li key={index}>
-                        {`${scooter}: ${addedProducts[scooter]}`}
+                        {`${name}: ${addedProducts[name]}
+                        * ${scooters.filter(scooter=>scooter.name===name)[0].price}`}
                     </li>
                 )}
             </ul>

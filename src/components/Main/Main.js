@@ -17,6 +17,7 @@ const Main  = (props) => {
                     {isActiveModal ?
                         <ModalShoppingCart
                             addedProducts={addedProducts}
+                            scooters={scooters}
                         />
                         :
                         null}
